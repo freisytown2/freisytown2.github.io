@@ -1,0 +1,6 @@
+{
+  "name": "MI ESPACIO DE ESTUDIO",
+  "description": "Aplicación educativa interactiva para aprender, practicar y jugar: lenguaje, matemáticas, ciencia, agilidad mental y retos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
