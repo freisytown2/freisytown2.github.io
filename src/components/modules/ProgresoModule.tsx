@@ -31,7 +31,7 @@ export const ProgresoModule: React.FC<ProgresoModuleProps> = ({ progress, onStat
             <span>🏆</span> Mi Progreso y Logros
           </h2>
           <p className="text-xs text-slate-500 mt-1">
-            Todo tu avance se guarda de forma 100% privada y segura en la memoria de tu dispositivo.
+            Todo tu avance se guarda de forma 100% privada y segura en el almacenamiento de tu dispositivo.
           </p>
         </div>
 

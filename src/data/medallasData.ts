@@ -27,11 +27,11 @@ export const BADGES: Badge[] = [
   },
   {
     id: 'memory_ace',
-    title: 'Memoria Prodigiosa',
-    description: 'Completaste partidas del juego de memoria.',
-    icon: '🧠',
+    title: 'Mente Prodigiosa',
+    description: 'Completaste ejercicios de agilidad y lógica mental.',
+    icon: '⚡',
     category: 'Agilidad',
-    requirement: '3 partidas de Memoria ganadas',
+    requirement: 'Completa desafíos en Retos o Lógica',
   },
   {
     id: 'word_seeker',

@@ -39,7 +39,7 @@ export const MODULES: ModuleItem[] = [
     icon: '🍎',
     bgColor: 'from-emerald-500 to-teal-600',
     accentColor: '#10b981',
-    description: 'Conoce frutas tropicales y tradicionales con ilustraciones, trivias y juegos de memoria.',
+    description: 'Conoce frutas tropicales y tradicionales con ilustraciones, trivias y juegos interactivos.',
   },
   {
     id: 'hogar',
@@ -102,16 +102,6 @@ export const MODULES: ModuleItem[] = [
     description: 'Divisiones sencillas, intermedias y problemas de la vida real con dividendo y divisor.',
   },
   {
-    id: 'memoria',
-    name: 'Memoria',
-    subtitle: 'Tarjetas 3D y agilidad',
-    category: 'juegos',
-    icon: '🧠',
-    bgColor: 'from-fuchsia-500 to-pink-600',
-    accentColor: '#d946ef',
-    description: 'Juego de parejas con volteo 3D. Elige temas de frutas, colores, letras o números.',
-  },
-  {
     id: 'sopa',
     name: 'Sopa de Letras',
     subtitle: 'Tableros interactivos',
@@ -169,7 +159,7 @@ export const MODULES: ModuleItem[] = [
     icon: '⚡',
     bgColor: 'from-orange-500 to-red-600',
     accentColor: '#ea580c',
-    description: '4 desafíos offline: lógica, anagramas de palabras, memoria Simon y cálculo veloz.',
+    description: '4 desafíos offline: lógica, anagramas de palabras, secuencias de colores y cálculo veloz.',
   },
   {
     id: 'ingles',

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Volume2, VolumeX, ArrowLeft, Home, Award, Sparkles } from 'lucide-react';
 import { ModuleId } from '../types';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   currentModule: ModuleId | null;
@@ -69,6 +70,9 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Right: Quick Stats & Controls */}
         <div className="flex items-center gap-2">
+          {/* PWA Install Button */}
+          <PWAInstallButton variant="header" />
+
           {/* Level / Points pill button to open progress */}
           <button
             onClick={() => onNavigateModule('progreso')}

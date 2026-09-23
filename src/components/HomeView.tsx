@@ -32,10 +32,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
   });
 
   const categories: { id: CategoryFilter; label: string }[] = [
-    { id: 'todos', label: 'Todos (18)' },
+    { id: 'todos', label: `Todos (${MODULES.length})` },
     { id: 'estudio', label: 'Estudio y Lengua' },
     { id: 'matematicas', label: 'Matemáticas' },
-    { id: 'juegos', label: 'Juegos y Memoria' },
+    { id: 'juegos', label: 'Juegos y Lógica' },
     { id: 'retos', label: 'Retos y Progreso' },
   ];
 

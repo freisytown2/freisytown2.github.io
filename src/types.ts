@@ -9,7 +9,6 @@ export type ModuleId =
   | 'resta'
   | 'multiplicacion'
   | 'division'
-  | 'memoria'
   | 'sopa'
   | 'ortografia'
   | 'quiz'

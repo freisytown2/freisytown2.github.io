@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#4338CA"/>
+      <stop offset="100%" stop-color="#312E81"/>
+    </linearGradient>
+    <linearGradient id="goldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Full bleed solid background for maskable icon -->
+  <rect width="512" height="512" fill="url(#bgMask)"/>
+
+  <!-- Centered safe zone content scaled within 80% safe zone -->
+  <g transform="translate(51.2, 51.2) scale(0.8)">
+    <!-- Glow rings -->
+    <circle cx="256" cy="240" r="160" fill="none" stroke="#FFFFFF" stroke-width="4" opacity="0.15"/>
+
+    <!-- Open Book -->
+    <path d="M 256 360 C 210 330 140 330 96 345 L 96 215 C 140 200 210 200 256 230 C 302 200 372 200 416 215 L 416 345 C 372 330 302 330 256 360 Z" fill="#F8FAFC"/>
+    <path d="M 256 360 C 210 330 140 330 96 345 L 96 215 C 140 200 210 200 256 230 Z" fill="#EEF2F6"/>
+    <path d="M 254 228 L 258 228 L 258 362 L 254 362 Z" fill="#CBD5E1"/>
+
+    <!-- Cap -->
+    <path d="M 256 120 L 340 162 L 256 204 L 172 162 Z" fill="url(#goldGradM)"/>
+    <path d="M 214 183 L 214 220 C 214 236 298 236 298 220 L 298 183 Z" fill="#D97706"/>
+    <path d="M 330 168 L 348 200 L 348 232" stroke="#FEF08A" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <circle cx="348" cy="235" r="5" fill="#FEF08A"/>
+    <ellipse cx="256" cy="162" rx="8" ry="4" fill="#FEF08A"/>
+
+    <!-- Sparkles -->
+    <path d="M 140 140 Q 140 160 120 160 Q 140 160 140 180 Q 140 160 160 160 Q 140 160 140 140 Z" fill="#38BDF8"/>
+    <path d="M 372 120 Q 372 135 357 135 Q 372 135 372 150 Q 372 135 387 135 Q 372 135 372 120 Z" fill="#FCD34D"/>
+
+    <g fill="#FFFFFF" opacity="0.9" font-family="system-ui, sans-serif" font-weight="900" font-size="28" text-anchor="middle">
+      <text x="256" y="440" letter-spacing="4">ESTUDIO</text>
+    </g>
+  </g>
+</svg>

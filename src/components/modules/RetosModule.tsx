@@ -201,7 +201,7 @@ export const RetosModule: React.FC<RetosModuleProps> = ({ onAddScore }) => {
             <span>⚡</span> Retos y Desafíos Mentales
           </h2>
           <p className="text-xs text-slate-500 mt-1">
-            4 pruebas independientes para ejercitar lógica, memoria secuencial y agilidad de cálculo.
+            4 pruebas independientes para ejercitar lógica, secuencias visuales y agilidad de cálculo.
           </p>
         </div>
 
@@ -420,7 +420,7 @@ export const RetosModule: React.FC<RetosModuleProps> = ({ onAddScore }) => {
         <div className="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-6 max-w-md mx-auto">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
             <span className="text-xs font-bold text-orange-600 bg-orange-50 px-3 py-1 rounded-full">
-              Memoria Secuencial
+              Secuencia Visual
             </span>
             <span className="text-xs font-bold text-slate-600">Nivel {simonLevel}</span>
           </div>

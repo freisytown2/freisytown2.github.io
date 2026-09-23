@@ -23,7 +23,6 @@ import { SumaModule } from './components/modules/SumaModule';
 import { RestaModule } from './components/modules/RestaModule';
 import { MultiplicacionModule } from './components/modules/MultiplicacionModule';
 import { DivisionModule } from './components/modules/DivisionModule';
-import { MemoriaModule } from './components/modules/MemoriaModule';
 import { SopaLetrasModule } from './components/modules/SopaLetrasModule';
 import { OrtografiaModule } from './components/modules/OrtografiaModule';
 import { QuizModule } from './components/modules/QuizModule';
@@ -37,6 +36,7 @@ import { GeografiaModule } from './components/modules/GeografiaModule';
 import { LogicaModule } from './components/modules/LogicaModule';
 import { ComprensionModule } from './components/modules/ComprensionModule';
 import { ProgresoModule } from './components/modules/ProgresoModule';
+import { OfflineIndicator } from './components/OfflineIndicator';
 
 import { ArrowLeft } from 'lucide-react';
 
@@ -100,8 +100,6 @@ export default function App() {
         return <MultiplicacionModule onAddScore={handleScoreEvent} />;
       case 'division':
         return <DivisionModule onAddScore={handleScoreEvent} />;
-      case 'memoria':
-        return <MemoriaModule onAddScore={handleScoreEvent} />;
       case 'sopa':
         return <SopaLetrasModule onAddScore={handleScoreEvent} />;
       case 'ortografia':
@@ -189,6 +187,9 @@ export default function App() {
         onSelectCategory={setActiveCategory}
         activeCategory={activeCategory}
       />
+
+      {/* Offline Status Notification */}
+      <OfflineIndicator />
     </div>
   );
 }

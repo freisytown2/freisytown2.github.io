@@ -33,15 +33,209 @@ const MesaIcon: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) =
   </svg>
 );
 
+const NeveraIcon: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`inline-block ${className}`}
+    aria-label="Nevera"
+  >
+    {/* Patas de la nevera */}
+    <rect x="18" y="58" width="5" height="3" rx="1.5" fill="#334155" />
+    <rect x="41" y="58" width="5" height="3" rx="1.5" fill="#334155" />
+
+    {/* Cuerpo principal / Carcasa exterior */}
+    <rect x="15" y="6" width="34" height="52" rx="5" fill="#0284C7" />
+    <rect x="15" y="6" width="34" height="52" rx="5" stroke="#0369A1" strokeWidth="1.5" />
+    <rect x="15" y="6" width="4" height="52" rx="2" fill="#0369A1" opacity="0.3" />
+
+    {/* Puerta superior (Congelador) */}
+    <rect x="17" y="8" width="30" height="17" rx="3.5" fill="#38BDF8" />
+    <path d="M19 10 L25 10 L21 23 L18 23 Z" fill="#FFFFFF" opacity="0.45" />
+    {/* Manija congelador */}
+    <rect x="42" y="13" width="2.5" height="8" rx="1.25" fill="#0F172A" />
+    <rect x="42.5" y="14" width="1" height="6" rx="0.5" fill="#94A3B8" />
+
+    {/* Ranura divisoria entre puertas */}
+    <rect x="15" y="26" width="34" height="2" fill="#0369A1" />
+
+    {/* Puerta inferior (Refrigerador) */}
+    <rect x="17" y="29" width="30" height="27" rx="3.5" fill="#38BDF8" />
+    <path d="M19 31 L26 31 L20 54 L18 54 Z" fill="#FFFFFF" opacity="0.4" />
+
+    {/* Dispensador de agua/hielo en puerta */}
+    <rect x="22" y="33" width="8" height="11" rx="2" fill="#0284C7" />
+    <rect x="23.5" y="34.5" width="5" height="8" rx="1.5" fill="#E0F2FE" />
+    <path d="M26 37 C26 37 24.5 39 24.5 40 C24.5 40.8 25.2 41.5 26 41.5 C26.8 41.5 27.5 40.8 27.5 40 C27.5 39 26 37 26 37 Z" fill="#0284C7" />
+
+    {/* Manija refrigerador */}
+    <rect x="42" y="33" width="2.5" height="14" rx="1.25" fill="#0F172A" />
+    <rect x="42.5" y="34.5" width="1" height="11" rx="0.5" fill="#94A3B8" />
+  </svg>
+);
+
+const EstufaIcon: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`inline-block ${className}`}
+    aria-label="Estufa"
+  >
+    {/* Patas de la estufa */}
+    <rect x="15" y="58" width="5" height="3" rx="1.5" fill="#1E293B" />
+    <rect x="44" y="58" width="5" height="3" rx="1.5" fill="#1E293B" />
+
+    {/* Cuerpo principal de la estufa */}
+    <rect x="12" y="16" width="40" height="42" rx="4" fill="#E2E8F0" stroke="#94A3B8" strokeWidth="1.5" />
+
+    {/* Copete superior con reloj digital */}
+    <path d="M12 18 L12 9 C12 7.5 13.5 6 15 6 L49 6 C50.5 6 52 7.5 52 9 L52 18 Z" fill="#64748B" />
+    <rect x="27" y="9" width="10" height="5" rx="1.5" fill="#0F172A" />
+    <text x="32" y="13" textAnchor="middle" fill="#38BDF8" fontSize="3.5" fontFamily="sans-serif" fontWeight="bold">12:00</text>
+
+    {/* Plancha de cocina con quemadores de fuego */}
+    <rect x="10" y="16" width="44" height="4" rx="2" fill="#334155" />
+    <ellipse cx="20" cy="18" rx="5" ry="1.5" fill="#F97316" />
+    <ellipse cx="32" cy="18" rx="4" ry="1.2" fill="#F97316" />
+    <ellipse cx="44" cy="18" rx="5" ry="1.5" fill="#F97316" />
+
+    {/* Panel de perillas giratorias */}
+    <rect x="14" y="21" width="36" height="7" rx="2" fill="#CBD5E1" />
+    <circle cx="19" cy="24.5" r="2" fill="#0F172A" />
+    <circle cx="26" cy="24.5" r="2" fill="#0F172A" />
+    <circle cx="38" cy="24.5" r="2" fill="#0F172A" />
+    <circle cx="45" cy="24.5" r="2" fill="#0F172A" />
+    <circle cx="26" cy="24.5" r="0.75" fill="#EF4444" />
+
+    {/* Puerta del horno */}
+    <rect x="15" y="30" width="34" height="23" rx="3" fill="#475569" />
+    {/* Manija del horno */}
+    <rect x="19" y="32" width="26" height="2.5" rx="1.25" fill="#F8FAFC" />
+    {/* Ventana de cristal del horno */}
+    <rect x="19" y="36.5" width="26" height="14" rx="2" fill="#0F172A" />
+    <rect x="21" y="38.5" width="22" height="10" rx="1.5" fill="#EA580C" opacity="0.35" />
+    <line x1="21" y1="43.5" x2="43" y2="43.5" stroke="#FED7AA" strokeWidth="1" strokeDasharray="2 2" />
+
+    {/* Cajón inferior */}
+    <rect x="15" y="54" width="34" height="3" rx="1" fill="#94A3B8" />
+  </svg>
+);
+
+const LamparaIcon: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`inline-block ${className}`}
+    aria-label="Lámpara"
+  >
+    {/* Resplandor cálido difuso */}
+    <polygon points="21,29 43,29 55,56 9,56" fill="#FEF08A" opacity="0.35" />
+
+    {/* Remate superior */}
+    <circle cx="32" cy="7" r="2" fill="#D97706" />
+
+    {/* Pantalla de lámpara cónica */}
+    <polygon points="23,9 41,9 47,29 17,29" fill="#F59E0B" stroke="#D97706" strokeWidth="1.5" />
+    <polygon points="20.5,21 43.5,21 45.5,26 18.5,26" fill="#FBBF24" opacity="0.8" />
+    <ellipse cx="32" cy="29" rx="15" ry="3" fill="#FDE047" stroke="#D97706" strokeWidth="1" />
+
+    {/* Cordón / Interruptor */}
+    <line x1="39" y1="29" x2="39" y2="37" stroke="#78350F" strokeWidth="1" strokeDasharray="1.5 1" />
+    <circle cx="39" cy="38" r="1.5" fill="#D97706" />
+
+    {/* Portalámparas */}
+    <rect x="30" y="30" width="4" height="4" fill="#92400E" />
+
+    {/* Mástil */}
+    <rect x="30.5" y="34" width="3" height="19" rx="1.5" fill="#D97706" />
+    <ellipse cx="32" cy="42" rx="3.5" ry="1.5" fill="#F59E0B" />
+
+    {/* Base de la lámpara */}
+    <ellipse cx="32" cy="55" rx="13" ry="4" fill="#B45309" />
+    <ellipse cx="32" cy="53" rx="12" ry="3.5" fill="#D97706" />
+    <ellipse cx="32" cy="52" rx="9" ry="2.5" fill="#F59E0B" />
+
+    {/* Rayos de luz exteriores */}
+    <line x1="12" y1="18" x2="6" y2="16" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+    <line x1="10" y1="26" x2="4" y2="28" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+    <line x1="52" y1="18" x2="58" y2="16" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+    <line x1="54" y1="26" x2="60" y2="28" stroke="#F59E0B" strokeWidth="1.5" strokeLinecap="round" />
+  </svg>
+);
+
+const VentiladorIcon: React.FC<{ className?: string }> = ({ className = 'w-7 h-7' }) => (
+  <svg
+    viewBox="0 0 64 64"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={`inline-block ${className}`}
+    aria-label="Ventilador"
+  >
+    {/* Ráfagas de brisa */}
+    <path d="M50 15 C54 13 58 17 56 22" stroke="#38BDF8" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M53 26 C57 26 60 29 58 33" stroke="#38BDF8" strokeWidth="1.5" strokeLinecap="round" />
+    <path d="M51 38 C55 40 57 44 54 48" stroke="#38BDF8" strokeWidth="1.5" strokeLinecap="round" />
+
+    {/* Rejilla protectora circular (Jaula del abanico) */}
+    <circle cx="29" cy="24" r="19" fill="#F0FDF4" stroke="#0D9488" strokeWidth="2" />
+    <circle cx="29" cy="24" r="14" stroke="#14B8A6" strokeWidth="1" strokeDasharray="3 3" opacity="0.7" />
+    <circle cx="29" cy="24" r="9" stroke="#14B8A6" strokeWidth="1" opacity="0.5" />
+
+    {/* Varillas radiales */}
+    <line x1="29" y1="5" x2="29" y2="43" stroke="#0D9488" strokeWidth="1" opacity="0.45" />
+    <line x1="10" y1="24" x2="48" y2="24" stroke="#0D9488" strokeWidth="1" opacity="0.45" />
+    <line x1="15" y1="10" x2="43" y2="38" stroke="#0D9488" strokeWidth="1" opacity="0.45" />
+    <line x1="15" y1="38" x2="43" y2="10" stroke="#0D9488" strokeWidth="1" opacity="0.45" />
+
+    {/* Aspas curvadas del abanico */}
+    <path d="M29 24 C27 15 35 10 37 12 C39 14 36 21 29 24 Z" fill="#0284C7" />
+    <path d="M29 24 C37 27 41 35 39 37 C37 39 30 35 29 24 Z" fill="#0369A1" />
+    <path d="M29 24 C22 28 17 22 17 19 C17 16 25 18 29 24 Z" fill="#38BDF8" />
+
+    {/* Eje central */}
+    <circle cx="29" cy="24" r="4.5" fill="#0F172A" />
+    <circle cx="29" cy="24" r="2" fill="#38BDF8" />
+
+    {/* Cuello y poste */}
+    <rect x="27" y="42" width="4" height="4" rx="1" fill="#475569" />
+    <rect x="27.5" y="45" width="3" height="10" rx="1.5" fill="#64748B" />
+
+    {/* Base con botones de velocidad */}
+    <ellipse cx="29" cy="57" rx="15" ry="4" fill="#334155" />
+    <ellipse cx="29" cy="55.5" rx="13" ry="3.5" fill="#475569" />
+    <circle cx="24" cy="55.5" r="1.25" fill="#EF4444" />
+    <circle cx="27.5" cy="55.5" r="1.25" fill="#3B82F6" />
+    <circle cx="31" cy="55.5" r="1.25" fill="#10B981" />
+    <circle cx="34.5" cy="55.5" r="1.25" fill="#F59E0B" />
+  </svg>
+);
+
 const renderHogarIcon = (item: HomeDetail, size: 'sm' | 'md' | 'lg' = 'md') => {
+  const sizeClasses = {
+    sm: 'w-6 h-6',
+    md: 'w-8 h-8',
+    lg: 'w-20 h-20',
+  };
+
   if (item.id === 'mesa') {
-    const sizeClasses = {
-      sm: 'w-6 h-6',
-      md: 'w-8 h-8',
-      lg: 'w-20 h-20',
-    };
     return <MesaIcon className={sizeClasses[size]} />;
   }
+  if (item.id === 'nevera') {
+    return <NeveraIcon className={sizeClasses[size]} />;
+  }
+  if (item.id === 'estufa') {
+    return <EstufaIcon className={sizeClasses[size]} />;
+  }
+  if (item.id === 'lampara') {
+    return <LamparaIcon className={sizeClasses[size]} />;
+  }
+  if (item.id === 'ventilador') {
+    return <VentiladorIcon className={sizeClasses[size]} />;
+  }
+
   return <span>{item.icon}</span>;
 };
 

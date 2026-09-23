@@ -125,7 +125,7 @@ export function recordExercise(
     'speed_math',
     (moduleVisits['suma'] || 0) + (moduleVisits['resta'] || 0) + (moduleVisits['multiplicacion'] || 0) >= 15
   );
-  checkAndUnlock('memory_ace', (moduleVisits['memoria'] || 0) >= 3);
+  checkAndUnlock('memory_ace', (moduleVisits['logica'] || 0) + (moduleVisits['retos'] || 0) >= 3);
   checkAndUnlock('word_seeker', (moduleVisits['sopa'] || 0) >= 1);
   checkAndUnlock('color_expert', (moduleVisits['colores'] || 0) >= 8);
   checkAndUnlock('geometry_wiz', (moduleVisits['geometria'] || 0) >= 6);
